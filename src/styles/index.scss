@@ -1,0 +1,33 @@
+@import-normalize;
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("GilroyRegular"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Nekst";
+  src: local("NekstBlack"), url("../fonts/Nekst-Black.woff2") format("woff2");
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nekst",  sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

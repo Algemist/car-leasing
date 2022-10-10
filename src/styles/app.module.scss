@@ -1,0 +1,21 @@
+@import "./variables";
+
+.container {
+  width: 100%;
+  max-width: 1344px;
+  padding: 44px 20px 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: 1120px) {
+    padding: 213px 48px 0 48px;
+  }
+}
+
+.title {
+  max-width: 753px;
+  margin: 0 0 32px;
+  font-weight: 900;
+  font-size: $fs-34;
+  line-height: 90%;
+  color: $color-title;
+}

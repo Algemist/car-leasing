@@ -1,0 +1,54 @@
+@import '../../../styles/variables';
+.btn {
+  display: inline-block;
+  padding: 18px 51.5px;
+  align-self: flex-start;
+  font-family: "Nekst", sans-serif;
+  font-weight: 900;
+  font-size: $fs-22;
+  line-height: 20px;
+  color: $color-white;
+  background-color: $primary;
+  border: none;
+  outline: none;
+  border-radius: $radius-btn;
+  transition: background-color .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover:not(:focus-visible):enabled {
+    background-color: $color-hover;
+  }
+
+  &:active:not(:focus-visible):enabled {
+    background-color: $color-active;
+  }
+
+  @media (min-width: 767px) {
+    max-width: 345px;
+    font-size: $fs-30;
+    line-height: 36px;
+  }
+
+  @media (min-width: 1120px) {
+    max-width: unset;
+    padding: 18px 40px;
+  }
+
+  &:disabled {
+    background-color: rgba(255, 149, 20, 0.4);
+    cursor: default;
+  }
+}
+
+.spinner {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
